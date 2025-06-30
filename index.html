@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Outpost | Branding & Digital Experience Design Studio</title>
+
+  </head>
+  <body class="relative">
+
+    <div id="app">
+      <canvas id="canvas"></canvas>
+    </div>
+    
+
+    <div id="main" class="absolute top-0 left-0 w-full h-[100vh] z-[9]">
+      <header class="fixed w-full z-[99]">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img src="/outpost.svg" width="50%" alt="" />
+          </div>
+          <h3 class="text-xl font-medium">Menu</h3>
+        </nav>
+        <div class="plus-wrapper absolute left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square cursor-pointer">
+          <svg class="plus-icon" viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid meet">
+
+            <line x1="-45" y1="0" x2="45" y2="0" stroke="gray" stroke-width="1" />
+            <line x1="0" y1="-45" x2="0" y2="45" stroke="gray" stroke-width="1" />
+            <line class="plus-line" x1="-45" y1="0" x2="45" y2="0" stroke-width="1" />
+            <line class="plus-line" x1="0" y1="-45" x2="0" y2="45" stroke-width="1" />
+          </svg>
+        </div>
+      </header>
+      <div id="hero-wrapper" class="w-full relative">
+        <div id="hero-text">
+          <div style="grid-column: 12 / span 26;overflow: hidden;" class="taking"><span id="split" class="inline-block">TAKING</span></div>
+          <div style="grid-column: 8 / span 26;overflow: hidden;" class="brands"><span id="split" class="inline-block">BRANDS</span></div>
+          <div style="grid-column: 10 / span 26;overflow: hidden;" class="further"><span id="split" class="inline-block">FURTHER</span></div>
+        </div>
+        <div id="hero-subtext">
+          <p>
+            <span>A DIGITAL</span><br />
+            <span>FIRST</span><br />
+            <span>DESIGN STUDIO</span>
+          </p>
+        </div>
+      </div>
+      <div id="video-section" style="padding-top: 5rem;" class="w-full">
+        <div id="hero-text" style="width: 100%;">
+          <div
+            id="video-wrapper"
+            style="grid-column: 1 / span 36; perspective: 1000px; backface-visibility: hidden; will-change: transform;"
+          >
+            <video
+              src="2aa7a0d0-ec720902.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+              style="
+                width: 100%;
+                height: 100%;
+                max-height: 100vh;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                display: block;
+                transform: translateZ(0);
+                will-change: transform, opacity;
+                backface-visibility: hidden;
+                contain: strict;
+                image-rendering: optimizeQuality;
+                filter: contrast(1.01) saturate(1.01);
+              "
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div id="subtext" class="w-full">
+        <div>
+          <p>
+            Through strategy, innovation and creativity
+            we take your brand on a journey of discovery
+            and transformation creating emotional
+            experiences that leave a lasting impression
+            and drive behaviour.
+          </p>
+
+          <!-- ISSUE -->
+          <div id="test">
+            <span>About Us</span>
+            <div class="inline-block relative">
+              <div id="cxz1" class="absolute">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+              <div id="cxz2">
+                <i class="ri-arrow-right-line" style="color: white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-articles" class="w-full">
+        <div id="intro">
+          <div>
+            <p>Our Latest Work</p>
+          </div>
+        </div>
+
+        <!-- Row 1: Right aligned image (12 cols) -->
+        <div id="main-article-row" class="relative">
+          <div class="article-wrapper absolute w-full h-full z-10"></div>
+          <div class="main-article-content-right">
+            <div class="main-article-number-right">01</div>
+            <div>
+              <h1 class="main-article-title main-article-title-right">
+                ASTON MARTIN
+              </h1>
+              <h3 class="main-article-subtitle main-article-subtitle-right">
+                Strategy,
+                Brand,
+                Digital,
+                Development,
+                Motion
+              </h3>
+            </div>
+          </div>
+          <div class="main-article-img-right">
+            <div class="main-article-img-portrait">
+              <img
+                src="https://www.datocms-assets.com/113036/1708097580-aston-hero.jpg"
+                alt="Interior of a modern building"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Left aligned image (20 cols) -->
+        <div id="main-article-row-left" class="relative">
+          <div class="article-wrapper absolute w-full h-full z-10"></div>
+          <div class="main-article-img-left">
+            <div class="main-article-img-landscape">
+              <img
+                src="https://www.datocms-assets.com/113036/1708247679-jakob-owens-ewrm05v0vsi-unsplash.jpg"
+                alt="Abstract building architecture"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+          <div class="main-article-content-left">
+            <div class="main-article-number-left">02</div>
+            <div>
+              <h1 class="main-article-title">
+                JAKOB OWENS
+              </h1>
+              <h3 class="main-article-subtitle">
+                Strategy,
+                Brand,
+                Digital,
+                Development,
+                Motion
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Right aligned image (12 cols) -->
+        <div id="main-article-row" class="relative">
+          <div class="article-wrapper absolute w-full h-full z-10"></div>
+          <div class="main-article-content-right">
+            <div class="main-article-number-right">04</div>
+            <div>
+              <h1 class="main-article-title main-article-title-right">
+                SONA
+              </h1>
+              <h3 class="main-article-subtitle main-article-subtitle-right">
+                Strategy,
+                Digital,
+                Development,
+                Motion
+              </h3>
+            </div>
+          </div>
+          <div class="main-article-img-right">
+            <div class="main-article-img-portrait">
+              <img
+                src="https://www.datocms-assets.com/113036/1708362386-sona-thumb.jpg"
+                alt="Close-up of a textured wall"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4: Left aligned image (20 cols) -->
+        <div id="main-article-row-left" class="last relative">
+          <div class="article-wrapper absolute w-full h-full z-10"></div>
+          <div class="main-article-img-left">
+            <div class="main-article-img-landscape">
+              <img
+                src="https://www.datocms-assets.com/113036/1705492239-studio-rhe-hero.jpg"
+                alt="Exterior of a building with a unique facade"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+          <div class="main-article-content-left">
+            <div class="main-article-number-left">04</div>
+            <div>
+              <h1 class="main-article-title">
+                STUDIO RHE
+              </h1>
+              <h3 class="main-article-subtitle">
+                Strategy,
+                Brand,
+                Digital,
+                Development,
+                Motion
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer-main">
+        <div id="footer-grid-top">
+          <div class="footer-col-start-4">
+            <div id="footer-brand-message">
+              Ready to take your brand to new and exciting places?
+            </div>
+            <div id="footer-contact-button">
+              <span>Contact</span>
+              <div style="display:inline-block; position:relative;">
+                <div id="footer-arrow1" style="position:absolute;">
+                  <i class="ri-arrow-right-line" style="color: #fff;"></i>
+                </div>
+                <div id="footer-arrow2">
+                  <i class="ri-arrow-right-line" style="color: rgb(0, 0, 0);"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="footer-nav" class="footer-col-start-12">
+            <div>Home</div>
+            <div>Work</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Lab</div>
+          </div>
+        </div>
+        <div id="footer-grid-middle">
+          <div id="footer-address" class="footer-col-start-4">
+            <div class="footer-section-title">
+              Our Address
+            </div>
+            <div class="footer-section-content">
+              <div>The Colony</div>
+              <div>Altrincham Road</div>
+              <div>Wilmslow, Cheshire</div>
+              <div>United Kingdom</div>
+              <div>SK9 4LY</div>
+            </div>
+          </div>
+          <div id="footer-contact" class="footer-col-start-8">
+            <div class="footer-section-title">
+              Get in touch
+            </div>
+            <div class="footer-section-content">
+              <div>info@outpost.design</div>
+              <div>+44 (0) 126 028 5815</div>
+            </div>
+          </div>
+          <div id="footer-social" class="footer-col-start-12">
+            <div class="footer-section-title">
+              Connect with us
+            </div>
+            <div id="socials" class="footer-section-content">
+              <div>X</div>
+              <div>Instagram</div>
+              <div>Linkedin</div>
+              <div>Behance</div>
+              <div>Dribbble</div>
+            </div>
+          </div>
+        </div>
+        <div id="footer-grid-bottom">
+          <div id="footer-legal" class="footer-col-start-4">
+            <div>© 2025 Outpost</div>
+            <div>All rights reserved</div>
+          </div>
+          <div id="footer-terms" class="footer-col-start-12">
+            <div>Terms & Conditions</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
